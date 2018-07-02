@@ -1,4 +1,4 @@
-package figure;
+package figures;
 
 import java.awt.*;
 
@@ -9,7 +9,7 @@ public abstract class Figure implements FigureMethods{
     protected Node [] points;
 
 
-    //надо всяких проверок добавить
+    //Г­Г Г¤Г® ГўГ±ГїГЄГЁГµ ГЇГ°Г®ГўГҐГ°Г®ГЄ Г¤Г®ГЎГ ГўГЁГІГј
     public Figure(){
         points = new Node[3];
         for (int i = 0; i < points.length; ++i){
