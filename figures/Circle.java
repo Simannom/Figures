@@ -1,4 +1,4 @@
-package figure;
+package figures;
 
 
 import panel.ViewPanel;
@@ -69,11 +69,11 @@ public class Circle extends Figure implements FigureMethods {
     }
 
 
-    //если question внутри this, то 1
-    //если this внутри question, то -1
-    //иначе 0
+    //ГҐГ±Г«ГЁ question ГўГ­ГіГІГ°ГЁ this, ГІГ® 1
+    //ГҐГ±Г«ГЁ this ГўГ­ГіГІГ°ГЁ question, ГІГ® -1
+    //ГЁГ­Г Г·ГҐ 0
     public int inCircle(Circle question){
-        //сначала смотрим центр
+        //Г±Г­Г Г·Г Г«Г  Г±Г¬Г®ГІГ°ГЁГ¬ Г¶ГҐГ­ГІГ°
         if (this.inCircle(question.points[0])){
             if ( circleFormula(question.points[0], this.points[0]) <= this.r * this.r)
                 return 1;
