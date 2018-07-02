@@ -69,11 +69,10 @@ public class Circle extends Figure implements FigureMethods {
     }
 
 
-    //åñëè question âíóòðè this, òî 1
-    //åñëè this âíóòðè question, òî -1
-    //èíà÷å 0
+    //if question is in this, return 1
+    //if this inside question, return -1
+    //else 0
     public int inCircle(Circle question){
-        //ñíà÷àëà ñìîòðèì öåíòð
         if (this.inCircle(question.points[0])){
             if ( circleFormula(question.points[0], this.points[0]) <= this.r * this.r)
                 return 1;
