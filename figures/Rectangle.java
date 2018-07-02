@@ -1,4 +1,4 @@
-package figure;
+package figures;
 
 import panel.MainFrame;
 import panel.ViewPanel;
