@@ -1,4 +1,4 @@
-package figure;
+package figures;
 
 import panel.ViewPanel;
 
@@ -21,8 +21,7 @@ public class Triangle extends Figure implements FigureMethods{
             points[i].add(changeVector);
         }
     }
-
-    //метод вывода на экран
+    
     @Override
     public void show(Graphics2D g, int width, int height) {
         int [] x = new int [3];
@@ -34,7 +33,6 @@ public class Triangle extends Figure implements FigureMethods{
         g.drawPolygon(x,y, 3);
     }
 
-    //метод масштабирования
     @Override
     public void scale(double multiplier, Node centerPoint) {
         Node tmp = new Node(0,0);
@@ -45,7 +43,6 @@ public class Triangle extends Figure implements FigureMethods{
         }
     }
 
-    //площадь
     @Override
     public Double area() {
         double a = points[0].distance(points[1]);
