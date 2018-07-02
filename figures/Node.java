@@ -1,4 +1,4 @@
-package figure;
+package figures;
 
 /**
  * Created by Simannom on 24.06.2018.
